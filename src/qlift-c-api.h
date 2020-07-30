@@ -28,6 +28,7 @@ extern "C" {
 #include "qlift-c-api/qlift-QLabel.h"
 #include "qlift-c-api/qlift-QLayout.h"
 #include "qlift-c-api/qlift-QLayoutItem.h"
+#include "qlift-c-api/qlift-QLineEdit.h"
 #include "qlift-c-api/qlift-QMainWindow.h"
 #include "qlift-c-api/qlift-QMenu.h"
 #include "qlift-c-api/qlift-QMenuBar.h"
