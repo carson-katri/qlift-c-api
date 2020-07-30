@@ -18,6 +18,14 @@ void QLineEdit_delete(void *lineEdit) {
     delete static_cast<QliftLineEdit*>(lineEdit);
 }
 
+void QLineEdit_setPlaceholderText(void *lineEdit, const char *text) {
+    static_cast<QLineEdit*>(lineEdit)->setPlaceholderText(text);
+}
+
+const char* QLineEdit_text(void *lineEdit) {
+    return static_cast<QLineEdit*>(lineEdit)->text().toLocal8Bit().data();
+}
+
 void QLineEdit_setText(void *lineEdit, const char *text) {
     static_cast<QLineEdit*>(lineEdit)->setText(text);
 }
