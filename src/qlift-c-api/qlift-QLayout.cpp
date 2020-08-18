@@ -18,3 +18,11 @@ int QLayout_sizeConstraint(void *layout) {
 void QLayout_setSizeConstraint(void *layout, int sizeConstraint) {
     static_cast<QLayout*>(layout)->setSizeConstraint(static_cast<QLayout::SizeConstraint>(sizeConstraint));
 }
+
+int QLayout_spacing(void *layout) {
+    return static_cast<QLayout*>(layout)->spacing();
+}
+
+void QLayout_setSpacing(void *layout, int spacing) {
+    static_cast<QLayout*>(layout)->setSpacing(spacing);
+}
