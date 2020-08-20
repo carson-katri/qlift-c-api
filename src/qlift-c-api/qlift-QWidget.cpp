@@ -108,6 +108,20 @@ void QWidget_setMaximumSize(void *widget, void *size) {
     }
 }
 
+void* QWidget_minimumSize(void *widget) {
+    auto stackSize = static_cast<QWidget*>(widget)->minimumSize();
+    return new QSize {stackSize.width(), stackSize.height() };
+}
+
+void QWidget_setMinimumSize(void *widget, void *size) {
+    if (size) {
+        static_cast<QWidget*>(widget)->setMinimumSize(*static_cast<QSize*>(size));
+    } else {
+        static_cast<QWidget*>(widget)->setMinimumSize(QSize());
+    }
+}
+
+
 const char* QWidget_styleSheet(void *widget) {
     return static_cast<QWidget*>(widget)->styleSheet().toLocal8Bit().data();
 }

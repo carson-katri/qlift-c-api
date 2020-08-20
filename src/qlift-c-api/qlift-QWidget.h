@@ -27,6 +27,8 @@ void* QWidget_frameGeometry(void *widget);
 bool QWidget_isWindow(void *widget);
 void* QWidget_maximumSize(void *widget);
 void QWidget_setMaximumSize(void *widget, void *size);
+void* QWidget_minimumSize(void *widget);
+void QWidget_setMinimumSize(void *widget, void *size);
 const char* QWidget_styleSheet(void *widget);
 void QWidget_setStyleSheet(void *widget, const char *styleSheet);
 
