@@ -9,6 +9,8 @@ bool QLayout_isEnabled(void *layout);
 void QLayout_setEnabled(void *layout, bool enabled);
 int QLayout_sizeConstraint(void *layout);
 void QLayout_setSizeConstraint(void *layout, int sizeConstraint);
+int QLayout_spacing(void *layout);
+void QLayout_setSpacing(void *layout, int spacing);
 
 #ifdef __cplusplus
 }
